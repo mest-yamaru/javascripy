@@ -28,6 +28,22 @@
     <script>
         $(() => {
             console.log('call.');
+
+            $.ajax({
+                type: "GET",
+                datatype: "JSON",
+                url: "./member.json"
+            })
+            .done((data) => {
+                console.log("success", data);
+            })
+            .fail((error) => {
+                console.log("fail", error);
+            })
+            .always(() => {
+                console.log("ajaxcomplete.");
+            });
+
         });
 
         $('#test').click(function() {
