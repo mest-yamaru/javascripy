@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body style="background-image:url('R.jpg');">
+        <div class="title">
+            <div class="title-text">Black Jack</div>
+        </div>
+        <div id="message">
+            <div class="message-text">Want to play a round?</div>
+        </div>
+        <div id="card">
+            <div id="sumCard">0</div>
+            <div class="cards-text">
+                <span>Your Cards: </span><span id="cards"></span>
+            </div>
+        </div>
+        <div class="btn-area">
+            <button id="moreCard-btn" onclick="moreCard()" style="display:inline;">Start Game</button>
+            <button id="reset-btn" class="btn btn-flat" onclick="resetCard()" style="display:none">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
