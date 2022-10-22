@@ -11,12 +11,17 @@
         </div>
         <div id="card">
             <div id="sumCard">0</div>
-            <div class="cards-text">
-                <span>Your Cards: </span><span id="cards"></span>
-            </div>
+        </div>
+        <div class="cards-text">
+            <span>Your Cards: </span><span id="cards"></span>
+        </div>
+        <div class="cards-text-mob" style="display:inline;">
+            <span>Enemy Cards: </span><span id="cardsMOB">?</span>
         </div>
         <div class="btn-area">
+            <button id="empty-btn" style="display:none;"></button>
             <button id="moreCard-btn" onclick="moreCard()" style="display:inline;">Start Game</button>
+            <button id="endGame-btn" onclick="resultMatch()" style="display:none;">〆</button>
             <button id="reset-btn" class="btn btn-flat" onclick="resetCard()" style="display:none">New Game</button>
         </div>
         <script src="index.js"></script>
